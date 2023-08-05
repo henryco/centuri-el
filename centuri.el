@@ -322,7 +322,7 @@
 
 ;;;###autoload
 (define-minor-mode centuri-mode
-  "Minor mode that centers window content"
+  "Minor mode that centers content of the buffer"
   :lighter centuri--lighter
   :init-value nil
   :global nil
