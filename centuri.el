@@ -281,37 +281,49 @@
   "Set extra left margin"
   (interactive)
   (when centuri-mode
-    (setq centuri--margin-left value)))
+    (setq centuri--margin-left value)
+    (centuri--hook-update)
+    ))
 
 (defun centuri-set-margin-right (value)
   "Set extra right margin"
   (interactive)
   (when centuri-mode
-    (setq centuri--margin-right value)))
+    (setq centuri--margin-right value)
+    (centuri--hook-update)
+    ))
 
 (defun centuri-inc-margin-left ()
   "Increment extra left margin"
   (interactive)
   (when centuri-mode
-    (setq centuri--margin-left (+ centuri--margin-left 1))))
+    (setq centuri--margin-left (+ centuri--margin-left 1))
+    (centuri--hook-update)
+    ))
 
 (defun centuri-inc-margin-right ()
   "Increment extra right margin"
   (interactive)
   (when centuri-mode
-    (setq centuri--margin-right (+ centuri--margin-right 1))))
+    (setq centuri--margin-right (+ centuri--margin-right 1))
+    (centuri--hook-update)
+    ))
 
 (defun centuri-dec-margin-left ()
   "Decrement extra left margin"
   (interactive)
   (when centuri-mode
-    (setq centuri--margin-left (max 1 (- centuri--margin-left 1)))))
+    (setq centuri--margin-left (max 1 (- centuri--margin-left 1)))
+    (centuri--hook-update)
+    ))
 
 (defun centuri-dec-margin-right ()
   "Decrement extra right margin"
   (interactive)
   (when centuri-mode
-    (setq centuri--margin-right (max 0 (- centuri--margin-right 1)))))
+    (setq centuri--margin-right (max 0 (- centuri--margin-right 1)))
+    (centuri--hook-update)
+    ))
 
 ;;;###autoload
 (defun centuri-mode-toggle ()
