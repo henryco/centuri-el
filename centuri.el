@@ -1,4 +1,4 @@
-;;; centuri.el --- Tweakable content centering in buffers  -*- lexical-binding: t; -*-
+;;; centuri.el --- Tweakable content centering for buffers  -*- lexical-binding: t; -*-
 ;;
 ;; Author: Henry Timur Domagalski <henrycodev@gmail.com>
 ;; Version: 1.0.0
