@@ -1,4 +1,4 @@
-;;; centuri.el --- Tweakable content centering in buffers  -*- lexical-binding: t; -*-
+;;; centuri.el --- Tweakable content centering for buffers  -*- lexical-binding: t; -*-
 ;;
 ;; Author: Henry Timur Domagalski <henrycodev@gmail.com>
 ;; Version: 1.0.0
@@ -334,7 +334,7 @@
 
 ;;;###autoload
 (define-minor-mode centuri-mode
-  "Minor mode that centeres window content"
+  "Minor mode that centers content of the buffer"
   :lighter centuri--lighter
   :init-value nil
   :global nil
