@@ -100,7 +100,7 @@
   :group 'centuri
   :type 'float)
 
-(defcustom centuri--buffers-ignored '(" *MINIMAP*")
+(defcustom centuri--buffers-ignored '()
   "List of ignored buffers"
   :group 'centuri)
 
